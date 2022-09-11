@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    font-family: "Kayak Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    // max-width: 1480px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+
+@import "base/variables";
+@import "base/fonts";
+
+@import "blocks/promo.scss";
+@import "blocks/btn";
