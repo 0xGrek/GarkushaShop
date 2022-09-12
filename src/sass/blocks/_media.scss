@@ -1,0 +1,23 @@
+@media (max-width: 1260px) {
+    .popular__inner,
+    .review__inner,
+    .discont__inner {
+        width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .popular__inner,
+    .review__inner,
+    .discont__inner {
+        width: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+    .popular__inner,
+    .review__inner,
+    .discont__inner {
+        width: 200px;
+    }
+}

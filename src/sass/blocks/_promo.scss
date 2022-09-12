@@ -1,121 +1,35 @@
-.container {
-    padding-top: 50px;
-    padding-bottom: 100px;
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: $promo-color;
 }
-
-.header {
+.navigation {
     display: flex;
-    justify-content: space-around;
     align-content: center;
+    justify-content: space-around;
     align-items: center;
-    &__logo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        img {
-            margin-right: 5px;
-        }
-        &_text {
-            font-weight: 500;
-            font-size: 18px;
-            background: linear-gradient(90deg, #000000 0%, #da5d1a 67.12%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
     &__menu {
-        ul {
-            min-width: 430px;
-            list-style: none;
-            display: flex;
-            justify-content: space-around;
-            li {
-                a {
-                    font-weight: 400;
-                    font-size: 18px;
-                    color: #000000;
-                }
-                a:hover {
-                    color: #ae0000;
-                }
+        display: flex;
+        list-style-type: none;
+        gap: 15px;
+        &-item {
+            a {
+                font-weight: 400;
+                font-size: 15px;
+                color: #000000;
+                text-transform: uppercase;
+            }
+            a:hover {
+                color: #e59660;
+                transition: all 0.3s;
             }
         }
+    }
+    &__buy {
     }
 }
-.wrapper {
-    margin: 60px 60px 0 60px;
-    min-height: 700px;
-    background-color: rgba(211, 117, 52, 0.2);
-    border-radius: 5px;
-    display: flex;
-    position: relative;
-    &__info {
-        margin: 60px 0 60px 170px;
-        width: 500px;
-        &-header {
-            font-weight: 700;
-            font-size: 22px;
-            background: linear-gradient(270deg, #da5d1a 0%, #ff7d38 97.97%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-fill-color: transparent;
-        }
-        &-title {
-            font-family: "Kayak Sans";
-            font-weight: 700;
-            font-size: 61px;
-            color: #010405;
-            margin-top: 10px;
-        }
-        &-descr {
-            width: 400px;
-            margin-top: 25px;
-            font-weight: 400;
-            font-size: 18px;
-            color: #6b6867;
-        }
-    }
-    &__img {
-        margin-top: 65px;
-        z-index: 1;
-        position: relative;
-        background: url("../../assets/img/icons/mask.png");
-    }
-    &__item {
-        &-discont {
-            width: 150px;
-            height: 170px;
-            left: 700px;
-            top: 100px;
-            background: rgba(255, 255, 255, 1);
-            border-radius: 5px 0px 5px 5px;
-            position: absolute;
-            img {
-                display: block;
-                margin: 0 auto;
-            }
-        }
-        &-delivery {
-            position: absolute;
-            left: 1205px;
-            top: 253px;
-        }
-        &-feedback {
-            position: absolute;
-            left: 1205px;
-            top: 613.63px;
-        }
-    }
-    .btn {
-        margin-top: 60px;
-    }
-    // .back {
-    //     position: absolute;
-    //     background-color: red;
-    //     height: 500px;
-    //     width: 500px;
-    //     z-index: 0;
-    //     left: 200px;
-    // }
+.promo {
+    min-height: 900px;
+    background: url("https://ermolaeva-underwear.com/wp-content/uploads/2020/12/IMG_0695-min.jpg")
+        no-repeat 90% / cover;
 }
