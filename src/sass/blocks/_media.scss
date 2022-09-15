@@ -20,4 +20,9 @@
     .discont__inner {
         width: 200px;
     }
+    .navigation {
+        &__logo {
+            margin: 0 0;
+        }
+    }
 }

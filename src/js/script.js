@@ -93,9 +93,8 @@ $(document).ready(function () {
         ],
     });
 });
-
 $(document).ready(function () {
-    $(".discont__wrapperclear").slick({
+    $(".discont__inner").slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
