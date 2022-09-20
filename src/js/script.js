@@ -140,3 +140,24 @@ $(document).ready(function () {
         ],
     });
 });
+
+const humburger = document.querySelector(".humburger"),
+    menu = document.querySelector(".menu"),
+    closeElem = document.querySelector(".menu__close"),
+    menuOverlay = document.querySelector(".menu__overlay");
+
+humburger.addEventListener("click", () => {
+    menu.classList.add("active");
+    menuOverlay.classList.add("hidden");
+});
+
+const closeModal = function () {
+    menu.classList.remove("active");
+    menuOverlay.classList.remove("hidden");
+};
+
+menuOverlay.addEventListener("click", closeModal);
+
+// closeElem.addEventListener("click", () => {
+//     menu.classList.remove("active");
+// });

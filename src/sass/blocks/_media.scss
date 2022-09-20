@@ -5,12 +5,37 @@
         width: 600px;
     }
 }
-
+@media (max-width: 1024px) {
+    .header {
+    }
+}
 @media (max-width: 768px) {
     .popular__inner,
     .review__inner,
     .discont__inner {
         width: 400px;
+    }
+    .header {
+        &__logo {
+            min-width: 100px;
+            font-size: 18px;
+        }
+        &__nav {
+            min-width: 350px;
+            margin-left: 50px;
+            .menu {
+                min-width: 240px;
+                &__item {
+                    a {
+                        font-size: 13px;
+                        row-gap: 15px;
+                    }
+                }
+                .btn {
+                    font-size: 12px;
+                }
+            }
+        }
     }
 }
 
@@ -25,4 +50,88 @@
             margin: 0 0;
         }
     }
+    .header {
+        .container {
+            padding: 20px 0 10px 0;
+        }
+        &__logo {
+            min-width: 175px;
+            font-size: 17px;
+            margin-left: 20px;
+        }
+        &__nav {
+            .menu {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                min-width: 150px;
+                height: 100vh;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.6s;
+                flex-direction: column;
+                background-color: #cc6154;
+                padding: 70px 0 60px 20px;
+                &__overlay.hidden {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #000;
+                    opacity: 0.25;
+                    transition: all 0.6s;
+                }
+                &__item {
+                }
+            }
+            .menu.active {
+                left: 0;
+                visibility: visible;
+                opacity: 1;
+                z-index: 10;
+            }
+        }
+    }
+    .humburger {
+        visibility: visible;
+        left: 5px;
+        width: 30px;
+        span {
+            width: 20px;
+        }
+        span.long {
+            width: 25px;
+        }
+    }
+    .btn {
+        visibility: visible;
+        justify-content: start;
+        position: fixed;
+        right: 15px;
+        top: 10px;
+    }
+    .long {
+        width: 30px;
+    }
+    .divider {
+        z-index: 1;
+    }
+}
+
+@media (max-width: 320px) {
+    // .header {
+    //     &__logo {
+    //         min-width: 150px;
+    //         font-size: 17px;
+    //     }
+    //     &__nav {
+    //         .menu {
+    //             visibility: hidden;
+    //         }
+    //     }
+    // }
+    // .humburger {
+    //     visibility: visible;
+    // }
 }

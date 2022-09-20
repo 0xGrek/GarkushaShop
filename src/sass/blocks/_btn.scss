@@ -1,11 +1,12 @@
 .btn {
-    width: 220px;
-    height: 55px;
-    left: 227px;
-    top: 532px;
-
-    background: #ff843f;
-    border-radius: 39px;
-    border: none;
+    display: flex;
+    color: #f9d073;
+    font-size: 14px;
+    // font-weight: 400;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #a30550;
+    align-items: center;
+    transition: 0.4s;
     cursor: pointer;
 }
