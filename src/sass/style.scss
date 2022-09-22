@@ -10,6 +10,10 @@ html {
     max-width: 1080px;
     margin: 0 auto;
 }
+.container__1440 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 a {
     text-decoration: none;
@@ -20,12 +24,17 @@ body {
 ul {
     margin: 0 0;
 }
+
 @import "base/variables";
 @import "base/fonts";
 @import "base/mixins";
-
-@import "blocks/promo.scss";
 @import "blocks/btn";
+
+@import "blocks/header";
+@import "blocks/promo";
 @import "blocks/popular";
-@import "blocks/media";
+@import "blocks/about";
+@import "blocks/discont";
 @import "blocks/review";
+
+@import "blocks/media";

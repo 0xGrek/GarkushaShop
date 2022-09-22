@@ -1,77 +1,9 @@
-// nav {
-//     position: fixed;
-//     background-color: #000000;
-//     width: 100vw;
-//     padding: 0 7.3206442167vw;
-//     height: 5.8565153734vw;
-//     min-height: 0;
-// }
-
-.header {
-    position: fixed;
-    background-color: #000000;
-    width: 100%;
-    padding: 0 7.3206442167vw;
-    height: 60px;
-    min-height: 0;
-    background: #cc6154;
-
-    .container {
-        padding: 10px 0 10px 0;
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-    }
-    &__logo {
-        color: #000000;
-    }
-    &__nav {
-        display: flex;
-        min-width: 450px;
-        justify-content: space-between;
-        align-items: center;
-        .menu {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-            padding: 0 0;
-            min-width: 300px;
-            &__item {
-                list-style-type: none;
-                a {
-                    color: #000000;
-                }
-            }
-        }
-    }
-}
-.humburger {
-    position: fixed;
-    top: 20px;
-    left: 30px;
-    height: 22px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    cursor: pointer;
-    visibility: hidden;
-    z-index: 1;
-    span {
-        display: block;
-        background: linear-gradient(90deg, #825d1a, #ffcc58);
-        width: 30px;
-        height: 3px;
-    }
-}
-.divider {
-}
 .promo {
-    min-height: 100vh;
-    background: url("https://ermolaeva-underwear.com/wp-content/uploads/2020/12/IMG_0695-min.jpg")
-        no-repeat 90% / cover;
+    &__inner {
+        min-height: 100vh;
+        position: relative;
+        padding-top: 250px;
+        padding-bottom: 250px;
+        background: url("../../assets/img/logo.PNG") no-repeat 10% / cover;
+    }
 }

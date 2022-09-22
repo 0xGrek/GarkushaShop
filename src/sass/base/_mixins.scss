@@ -36,3 +36,8 @@
     letter-spacing: 10px;
     text-align: center;
 }
+.popular__inner,
+.review__inner,
+.discont__inner {
+    z-index: -1;
+}
