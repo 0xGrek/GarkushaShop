@@ -1,9 +1,4 @@
 .promo {
-    &__inner {
-        min-height: 100vh;
-        position: relative;
-        padding-top: 250px;
-        padding-bottom: 250px;
-        background: url("../../assets/img/logo.PNG") no-repeat 10% / cover;
-    }
+    min-height: 1800px;
+    background: url("../../assets/img/logo.PNG") center 50% / cover no-repeat;
 }

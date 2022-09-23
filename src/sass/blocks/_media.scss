@@ -1,30 +1,69 @@
-@media (min-width: 1260px) {
-    .popular__inner,
-    .review__inner,
-    .discont_inner,
-    .review__inner-second {
-        width: 600px;
+@media (max-width: 1440px) {
+    // .popular__inner,
+    // .review__inner,
+    // .discont_inner,
+    // .review__inner-second {
+    //     width: 600px;
+    // }
+    // .promo {
+    //     min-height: 920px;
+    // }
+    .discont,
+    .popular {
+        &_inner {
+            .slick {
+                &-list {
+                    margin: 0 auto;
+                    max-width: 700px;
+                }
+            }
+            .slick-prev,
+            .slick-next {
+                right: 100px;
+            }
+            .slick-next {
+                left: 100px;
+                right: auto;
+            }
+        }
+    }
+    .promo {
+        min-height: 1040px;
     }
 }
-@media (max-width: 1260px) {
-    .popular__inner,
-    .review__inner,
-    .discont_inner,
-    .review__inner-second {
-        width: 600px;
-    }
-}
+
 @media (max-width: 1024px) {
-    .promo__inner {
-        padding-top: 170px;
-        padding-bottom: 170px;
-        background: url("../../assets/img/logo.PNG") no-repeat 50% / cover;
+    // .popular__inner,
+    // .review__inner,
+    // .review__inner-second {
+    //     width: 600px;
+    // }
+    .promo {
+        min-height: 780px;
+    }
+    .discont,
+    .popular {
+        &__inner {
+            .slick {
+                &-list {
+                    // margin: 0 auto;
+                    max-width: 500px;
+                }
+            }
+            .slick-prev,
+            .slick-next {
+                right: 90px;
+            }
+            .slick-next {
+                left: 90px;
+                right: auto;
+            }
+        }
     }
 }
 @media (max-width: 768px) {
-    .popular__inner,
+    // .popular__inner,
     .review__inner,
-    .discont_inner,
     .review__inner-second {
         width: 400px;
     }
@@ -55,15 +94,43 @@
             }
         }
     }
+    .promo {
+        min-height: 620px;
+    }
+    .discont,
+    .popular {
+        &__inner {
+            .slick {
+                &-list {
+                    margin: 0 auto;
+                    max-width: 400px;
+                }
+            }
+            .slick-prev,
+            .slick-next {
+                right: 37px;
+            }
+            .slick-next {
+                left: 37px;
+                right: auto;
+            }
+        }
+    }
+    .title_h2 {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 550px) {
-    .popular__inner,
+    // .popular__inner,
     .review__inner,
-    .discont__inner,
     .review__inner-second {
         width: 200px;
         z-index: -1;
+    }
+    .promo {
+        // min-height: 590px;
+        min-height: 100vh;
     }
     .header {
         .container {
@@ -86,7 +153,7 @@
                 visibility: hidden;
                 transition: all 0.6s;
                 background-color: #cc6154;
-                padding-top: 100px;
+                padding-top: 140px;
                 padding-left: 30px;
                 height: 100%;
                 &__item {
@@ -123,6 +190,30 @@
             }
         }
     }
+    .discont,
+    .popular {
+        &__inner {
+            .slick {
+                &-list {
+                    max-width: 200px;
+                    div {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .slick-prev,
+            .slick-next {
+                right: 22px;
+                z-index: 10;
+            }
+            .slick-next {
+                left: 22px;
+                right: auto;
+            }
+        }
+    }
     .humburger {
         visibility: visible;
         left: 5px;
@@ -155,41 +246,9 @@
         z-index: 1;
     }
 
-    .promo__inner {
-        padding-top: 200px;
-        padding-bottom: 200px;
-        background: url("../../assets/img/logo.PNG") no-repeat 50% / cover;
-    }
-
-    .popular {
-        .title_h2 {
-            font-size: 50px;
-        }
-    }
-
     .review {
         .title_h2 {
             font-size: 35px;
         }
     }
-    .title_h2 {
-        font-size: 35px;
-    }
 }
-
-// @media (max-width: 320px) {
-//     // .header {
-//     //     &__logo {
-//     //         min-width: 150px;
-//     //         font-size: 17px;
-//     //     }
-//     //     &__nav {
-//     //         .menu {
-//     //             visibility: hidden;
-//     //         }
-//     //     }
-//     // }
-//     // .humburger {
-//     //     visibility: visible;
-//     // }
-// }
