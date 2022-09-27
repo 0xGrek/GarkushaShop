@@ -1,16 +1,9 @@
 @media (max-width: 1440px) {
-    // .popular__inner,
-    // .review__inner,
-    // .discont_inner,
-    // .review__inner-second {
-    //     width: 600px;
-    // }
-    // .promo {
-    //     min-height: 920px;
-    // }
     .discont,
-    .popular {
-        &_inner {
+    .popular,
+    .review {
+        &__inner,
+        &__inner-second {
             .slick {
                 &-list {
                     margin: 0 auto;
@@ -27,23 +20,21 @@
             }
         }
     }
+
     .promo {
         min-height: 1040px;
     }
 }
 
 @media (max-width: 1024px) {
-    // .popular__inner,
-    // .review__inner,
-    // .review__inner-second {
-    //     width: 600px;
-    // }
     .promo {
         min-height: 780px;
     }
     .discont,
-    .popular {
-        &__inner {
+    .popular,
+    .review {
+        &__inner,
+        &__inner-second {
             .slick {
                 &-list {
                     // margin: 0 auto;
@@ -60,13 +51,10 @@
             }
         }
     }
+    .footer {
+    }
 }
 @media (max-width: 768px) {
-    // .popular__inner,
-    .review__inner,
-    .review__inner-second {
-        width: 400px;
-    }
     .header {
         .container {
             padding: 10px 20px;
@@ -98,8 +86,10 @@
         min-height: 620px;
     }
     .discont,
-    .popular {
-        &__inner {
+    .popular,
+    .review {
+        &__inner,
+        &__inner-second {
             .slick {
                 &-list {
                     margin: 0 auto;
@@ -116,6 +106,12 @@
             }
         }
     }
+    .about {
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 20px;
+        }
+    }
     .title_h2 {
         font-size: 30px;
     }
@@ -123,11 +119,11 @@
 
 @media (max-width: 550px) {
     // .popular__inner,
-    .review__inner,
-    .review__inner-second {
-        width: 200px;
-        z-index: -1;
-    }
+    // .review__inner,
+    // .review__inner-second {
+    //     width: 200px;
+    //     z-index: -1;
+    // }
     .promo {
         // min-height: 590px;
         min-height: 100vh;
@@ -191,8 +187,10 @@
         }
     }
     .discont,
-    .popular {
-        &__inner {
+    .popular,
+    .review {
+        &__inner,
+        &__inner-second {
             .slick {
                 &-list {
                     max-width: 200px;
@@ -212,6 +210,12 @@
                 left: 22px;
                 right: auto;
             }
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 20px;
         }
     }
     .humburger {
