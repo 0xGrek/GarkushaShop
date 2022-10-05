@@ -3,8 +3,12 @@
     width: 100%;
     height: 60px;
     // min-height: 50px;
-    background: #cc6154;
+    background: #c99495ea;
     z-index: 100;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        2px 5px 16px 4px rgba(255, 84, 207, 0.45);
+    box-shadow: 0px 10px 13px -7px #000000,
+        2px 5px 16px 4px rgba(255, 84, 207, 0.45);
     .container {
         padding: 10px 20px 10px 20px;
         display: flex;
@@ -14,8 +18,12 @@
         position: relative;
     }
     &__logo {
-        color: #000000;
-        // font-size: 25px;
+        color: #b80056;
+        // font-size: 15px;
+        font-size: 22px;
+        font-weight: 700;
+        // letter-spacing: 5px;
+        animation: heart1 3s ease infinite normal;
     }
     &__nav {
         display: flex;
@@ -28,18 +36,41 @@
             justify-content: space-between;
             padding: 0 0;
             min-width: 450px;
+            position: relative;
             &__item {
                 list-style-type: none;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 100%;
+                    height: 1.5px;
+                    // border-radius: 100%;
+                    // border: 2px solid #825d1a;
+                    color: red;
+                    transition: all 1s;
+                    overflow: hidden;
+                }
+                &:hover {
+                    &:before {
+                        background-color: #ba2099;
+                        filter: drop-shadow(23px 38px 19px #000);
+                    }
+                }
                 a {
                     color: #000000;
                     // text-transform: uppercase;
                 }
                 a:hover {
-                    text-decoration: underline;
+                    text-decoration: none;
                 }
             }
             &__close {
                 visibility: hidden;
+                filter: invert(26%) sepia(36%) saturate(4026%)
+                    hue-rotate(308deg) brightness(84%) contrast(84%);
             }
         }
     }
@@ -59,7 +90,7 @@
     z-index: 1;
     span {
         display: block;
-        background: linear-gradient(90deg, #825d1a, #ffcc58);
+        background: #ad557d;
         width: 30px;
         height: 3px;
     }

@@ -1,12 +1,17 @@
 .btn {
     display: flex;
-    color: #f9d073;
+    color: #fafafa;
     font-size: 14px;
     // font-weight: 400;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #a30550;
+    background-color: #ad557d;
     align-items: center;
     transition: 0.4s;
     cursor: pointer;
+    letter-spacing: 1px;
+}
+.btn:hover {
+    background-color: #b3306d;
+    transition: all 0.3;
 }

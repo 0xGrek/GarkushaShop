@@ -23,6 +23,7 @@
             }
             .mail {
                 margin-top: 10px;
+                color: rgb(0, 0, 0);
             }
         }
         &-time {
@@ -30,14 +31,26 @@
                 width: 70px;
             }
         }
-    }
-    &-special {
+        &-special {
+            // h3 {
+            //     // text-align: center;
+            // }
+            p {
+                max-width: 200px;
+            }
+        }
     }
 
     .copyright {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        color: black;
         margin: 2em 2em 0 1em;
+        a {
+            color: black;
+        }
+        .dev {
+            font-size: 12px;
+        }
     }
 }

@@ -2,10 +2,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-html {
-    font-family: "Kayak Sans", sans-serif;
-    font-family: "Roboto", sans-serif;
-}
+
 .container {
     max-width: 1080px;
     margin: 0 auto;
@@ -17,9 +14,15 @@ html {
 
 a {
     text-decoration: none;
+    color: #fafafa;
+    // font-family: rel_e;
 }
 body {
     min-height: 100vh;
+    // background-color: rgb(235, 235, 235);
+    // color: rgb(255, 255, 255);
+    font-family: reg;
+    background: linear-gradient(90deg, #ffe0ca9e, #fdd2e5);
 }
 ul {
     margin: 0 0;
@@ -27,8 +30,9 @@ ul {
 
 @import "base/variables";
 @import "base/fonts";
-@import "base/mixins";
 @import "blocks/btn";
+@import "base/mixins";
+@import "blocks/animated";
 
 @import "blocks/header";
 @import "blocks/promo";
